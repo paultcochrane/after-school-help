@@ -45,6 +45,15 @@ source venv/bin/activate  # activate the Python virtual environment
 pip install -r requirements.txt  # install the required Python libraries
 ```
 
+Alternatively, you could just run the setup script and then activate the
+virtual environment:
+
+```shell
+cd after-school-help  # change into the directory we just created
+./setup.sh  # set up project and install Python libraries
+source venv/bin/activate  # activate the Python virtual environment
+```
+
 Now you'll be ready to start the JupyterLab notebook environment.  Just run
 
 ```shell
