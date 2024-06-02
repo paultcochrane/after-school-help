@@ -1,0 +1,33 @@
+\documentclass[preview]{standalone}
+
+\usepackage{amsmath}
+\usepackage{scalerel}
+
+\newcommand{\longdiv}{\smash{\mkern-0.43mu\vstretch{1.31}{\hstretch{.7}{)}}\mkern-5.2mu\vstretch{1.31}{\hstretch{.7}{)}}}}
+\renewcommand\arraystretch{1.2}
+\arraycolsep=1pt
+
+\PreviewEnvironment{equation*}
+
+\begin{document}
+
+\begin{equation*}
+    \begin{array}{*1r @{\hskip\arraycolsep}c@{\hskip\arraycolsep} *{7}c}
+      &          &     &   & x^2  & - & 5x  & + & 3\\
+        \cline{2-9}
+x + 3 & \longdiv & x^3 & - & 2x^2 & - & 12x & + & 9\\
+      &          & x^3 & + & 3x^2 &   &     &   & \\
+        \cline{3-5}
+      &          &     & - & 5x^2 & - & 12x &   & \\
+      &          &     & - & 5x^2 & - & 15x &   & \\
+        \cline{4-7}
+      &          &     &   &      &   & 3x  & + & 9\\
+      &          &     &   &      &   & 3x  & + & 9\\
+        \cline{7-9}
+      &          &     &   &      &   &     &   & 0\\
+\end{array}
+\end{equation*}
+
+\end{document}
+
+% vim: expandtab shiftwidth=4 softtabstop=4
