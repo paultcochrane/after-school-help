@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+\begin{document}
+
+\resizebox{700px}{!}{%
+\begin{tikzpicture}
+    \draw[fill=none] (0, 0) circle (2.0);
+    \draw[fill=black] (0, 0) circle (1pt);
+    \draw[->] (0, 0) -- (2, 0) node [midway, above] {$r$};
+    \draw[->] (2, 0) -- (2, 1) node [midway, right] {$v$};
+    \draw[->] (0, 2) -- (0, 1.2) node [right] {$F_g$};
+    \draw[->] (0, 2) -- (0, 2.8) node [right] {$F_c$};
+\end{tikzpicture}
+}
+
+\end{document}
