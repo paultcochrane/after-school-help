@@ -1,5 +1,6 @@
 \documentclass{scrartcl}
 
+\usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[usenames, dvipsnames]{xcolor}
@@ -18,24 +19,24 @@ Aufgaben in jedem Abschnitt machen.
 
 Die Ableitung einer Funktion ist die Steigung an allen Punkten der Kurve der
 Funktion.  Die Steigung an einem beliebigen Punkt einer Funktion findet man,
-in dem man eine Tangente zu der Kurve der Funktion an diesem Punkt zieht und
+indem man eine Tangente zu der Kurve der Funktion an diesem Punkt zieht und
 dann die Steigung dieser Tangente bestimmt.
 
 Siehe zum Beispiel dieses Diagramm einer quadratischen Funktion.
 
 \includegraphics[width=\textwidth]{quadratic-with-tangents.pdf}
 
-Wenn man einen bestimmten Punkt wählt, dann kann man eine Tangente ziehen an
-diesen Punkt.  Diese Tangente ist dann die Ableitung der Funktion \emph{an
-diesem Punkt}.  Die allgemeine Form einer Ableitung ergibt eine Funktion,
-die besagt, was die Steigung einer Tangente an jedem beliebigen Punkt haben
-wird.
+Wenn man einen bestimmten Punkt wählt, dann kann man an diesem Punkt eine
+Tangente ziehen.  Diese Tangente ist dann die Ableitung der Funktion
+\emph{an diesem Punkt}.  Die allgemeine Form einer Ableitung ergibt eine
+Funktion, die besagt, was die Steigung einer Tangente an jedem beliebigen
+Punkt hat.
 
 \section{Das Ableiten eines Polynoms vom Grad $n$.}
 \label{sec:ableiten-grad-n}
 
-Die Ableitung eines Polynoms (z.B. $x^n$) findet man, in dem man die Potenz
-als Faktor nimmt, die Potenz des Polynoms um 1 reduziert, und diese
+Die Ableitung eines Polynoms (z.\,B. $x^n$) findet man, indem man die Potenz
+als Faktor nimmt, die Potenz des Polynoms um 1 reduziert und diese
 miteinander multipliziert.  Anders gesagt:
 
 \begin{equation}
@@ -48,7 +49,8 @@ Hier ist das gleiche Konzept aber anders formuliert:
     \text{Sei } f(x) = x^n, \text{dann } f'(x) = n \cdot x^{n-1}
 \end{equation}
 
-wo $f'(x)$ ist die Ableitung der Funktion $f(x)$.
+\noindent
+wobei $f'(x)$ ist die Ableitung der Funktion $f(x)$.
 
 \paragraph{Beispiel} Nehmen wir die allgemeine Form einer quadratischen
 Funktion:
@@ -89,7 +91,7 @@ vom ersten Term bildlich dargestellt:
 }
 \end{center}
 
-Hier sind die einzelnen Schritte dieses Prozesses.
+Hier sind die einzelnen Schritte dieses Prozesses:
 
 \begin{align}
     a x^2 & \rightarrow 2 a x^{2 - 1}\\
@@ -143,7 +145,7 @@ Der Grund hierfür ist, dass die einzelnen Terme so abgeleitet werden:
     2 & \rightarrow 0
 \end{align}
 
-Betrachten wir diesen Prozess genauer, in dem wir jeden Term einzeln
+Betrachten wir diesen Prozess genauer, indem wir jeden Term einzeln
 anschauen.  Hier der erste Term:
 
 \begin{align}
@@ -177,7 +179,7 @@ Und hier ist der zweite Term:
     & = -5
 \end{align}
 
-Wo der Ableitungsprozess auch so dargestellt werden kann:
+Wobei der Ableitungsprozess auch so dargestellt werden kann:
 
 \begin{center}
 \resizebox{0.5\textwidth}{!}{
@@ -199,12 +201,12 @@ Wo der Ableitungsprozess auch so dargestellt werden kann:
 Die Ableitung einer Konstante ist 0 (Null), da die Steigung einer Kurve mit
 konstantem Wert Null ist.
 
-Zum Beispiel, schaue dieses Diagramm der Funktion $f(x) = 3$ an:
+Betrachten wir z.\,B. dieses Diagramm der Funktion $f(x) = 3$ an:
 
 \includegraphics[width=\textwidth]{constant-function.pdf}
 
-Siehe, das die Funktion keine Steigung hat. Das bedeutet, dass die Ableitung
-dieser Funktion gleich 0 (Null) ist.
+Wir erkennen, dass die Funktion keine Steigung hat. Das bedeutet, dass die
+Ableitung dieser Funktion gleich 0 (Null) ist.
 
 \subsection{Aufgaben}
 \label{ex:constants}
@@ -222,12 +224,13 @@ Finde die Ableitung der folgenden Funktionen:
 \label{sec:ableitung-gerade}
 
 Die Ableitung einer Gerade ist die Steigung der Kurve der Gerade.  Die
-allgemeine Form einer Funktion, die eine Gerade darstellt ist:
+allgemeine Form einer Funktion, die eine Gerade darstellt ist
 
 \begin{equation}
-    f(x) = m x + b
+    f(x) = m x + b,
 \end{equation}
 
+\noindent
 wobei $m$ die Steigung der Kurve ist und $b$ is der Schnittpunkt der Gerade
 mit der $y$-Achse.
 
@@ -270,7 +273,7 @@ Diese Funktion hat die allgemeine Form einer Gerade wie oben erwähnt, siehe:
     \text{Form: } & m x + b
 \end{align}
 
-Wo $m$ (die Steigung der Gerade) entspricht den Wert 10 und $b$ (der
+Wobei $m$ (die Steigung der Gerade) entspricht den Wert 10 und $b$ (der
 Schnittpunkt der $y$-Achse) entspricht den Wert $-2$.
 
 Da die Steigung der Gerade den Wert 10 hat, können wir direkt sagen, dass
@@ -281,7 +284,7 @@ die Ableitung von $f(x)$ ist:
 \end{equation}
 
 Wir können dies auch sehen anhand der Diskussion über das Ableiten eines
-Polynoms vom Grad $n$ im Abschnitt~\ref{sec:ableiten-grad-n}:
+Polynoms vom Grad $n$ in Abschnitt~\ref{sec:ableiten-grad-n}:
 
 \begin{align}
     f(x) &\rightarrow f'(x)\\
@@ -311,7 +314,7 @@ Gerade entspricht:
     \text{Form: } && m x &&+ b
 \end{alignat}
 
-Da $m$ die Steigung der Gerade ist, was den Wert $-12$ entspricht, kann man
+Da $m$ die Steigung der Gerade ist, was dem Wert $-12$ entspricht, kann man
 direkt sagen, dass die Ableitung von $f(x)$ ist:
 
 \begin{equation}
@@ -323,8 +326,8 @@ Kurve nach unten zeigt.  Wenn die Steigung positiv ist, dann zeigt die Kurve
 nach oben.
 
 Wenn wir den allgemeinen Prozess für die Ableitung eines Polynoms benutzen
-(wie aus der Diskussion in Abschnitt~\ref{sec:ableitung-grad-n}), dann
-bekommen wir dasselbe Ergebnis.  Schau:
+(wie aus der Diskussion in Abschnitt~\ref{sec:ableiten-grad-n}), dann
+bekommen wir dasselbe Ergebnis:
 
 \begin{align}
     f(x) &\rightarrow f'(x)\\
@@ -367,16 +370,16 @@ einer quadratischen Funktion eine Gerade.  Die Ableitung von $f(x)$ ist:
     f'(x) = 2ax + b
 \end{equation}
 
-Setzen wir den Koeffizienten $2a$ gleich $m$, d.h.:
+Setzen wir den Koeffizienten $2a$ gleich $m$, d.\,h.:
 
 \begin{equation}
-    m = 2 \cdot a
+    m = 2 \cdot a,
 \end{equation}
 
 dann können wir die Ableitung oben so schreiben:
 
 \begin{equation}
-    f'(x) = mx + b
+    f'(x) = mx + b,
 \end{equation}
 
 was die allgemeine Form einer Gerade entspricht.
@@ -397,13 +400,7 @@ einzelnen Term finden und kombinieren.  Die Ableitung des ersten Terms ist:
     &\rightarrow 14 x
 \end{align}
 
-Die Ableitung des zweiten Terms ist wie folgt.
-
-\begin{quotation}
-\textbf{Merke:} dieser Term ist \emph{linear} in $x$, was heißt, dass er wie
-eine Gerade wirkt und deshalb kann man diesen Term wie eine Gerade Funktion
-ableiten wie in Abschnitt~\ref{sec:ableitung-gerade} diskutiert.
-\end{quotation}
+Die Ableitung des zweiten Terms lautet wie folgt.
 
 \begin{align}
     19 x = 19 x^1 &\rightarrow 19 \cdot 1 \cdot x^{1 - 1}\\
@@ -412,9 +409,15 @@ ableiten wie in Abschnitt~\ref{sec:ableitung-gerade} diskutiert.
     &= 19
 \end{align}
 
+\begin{quotation}
+\textbf{Merke:} dieser Term ist \emph{linear} in $x$, was heißt, dass er wie
+eine Gerade wirkt und deshalb kann man diesen Term wie eine gerade Funktion
+ableiten wie in Abschnitt~\ref{sec:ableitung-gerade} diskutiert.
+\end{quotation}
+
 Der letzte Term ist eine Konstante, deshalb können wir diesen Term wie
-Konstanten ableiten, wie im Abschnitt~\ref{sec:ableitung-konstante}
-diskutiert.  Das heißt, dass die Ableitung dieses Terms ist 0 (Null):
+Konstanten ableiten, wie in Abschnitt~\ref{sec:ableitung-konstante}
+diskutiert.  Das heißt, dass die Ableitung dieses Terms ist gleich 0 (Null):
 
 \begin{equation}
     -6 \rightarrow 0
@@ -448,10 +451,10 @@ Finde die Ableitung der folgenden Funktionen:
 \subsection*{Ableitung einer Konstante (Aufgaben~\ref{ex:constants})}
 
 \begin{enumerate}
-    \item 0
-    \item 0
-    \item 0
-    \item 0
+    \item $f'(x) = 0$
+    \item $f'(x) = 0$
+    \item $f'(x) = 0$
+    \item $f'(x) = 0$
 \end{enumerate}
 
 Das ist kein Witz: alle Antworten sind 0 (Null), da die Ableitung einer
@@ -460,20 +463,20 @@ Konstante immer Null ist.
 \subsection*{Ableitung einer Gerade (Aufgaben~\ref{ex:straight-lines})}
 
 \begin{enumerate}
-    \item 10
-    \item 2
-    \item 14
-    \item -$12$
+    \item $f'(x) = 10$
+    \item $f'(x) = 2$
+    \item $f'(x) = 14$
+    \item $f'(x) = -12$
 \end{enumerate}
 
 \subsection*{Ableitung einer quadratischen Funktion (Aufgaben~\ref{ex:quadratics})}
 
 \begin{enumerate}
-    \item $2x - 1$
-    \item $-2x + 14$
-    \item $6x - 2$
-    \item $3x - 5$
-    \item $14x + 19$
+    \item $f'(x) = 2x - 1$
+    \item $f'(x) = -2x + 14$
+    \item $f'(x) = 6x - 2$
+    \item $f'(x) = 3x - 5$
+    \item $f'(x) = 14x + 19$
 \end{enumerate}
 
 \end{document}
